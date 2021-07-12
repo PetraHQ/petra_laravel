@@ -1,0 +1,54 @@
+{
+    "name": "petra_africa/petra",
+    "description": "Laravel SDK for Petra Africa Payment Processing",
+    "keywords": [
+        "petra africa",
+        "petra"
+    ],
+    "homepage": "https://github.com/petra africa/petra",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Emmanuel Adebayo",
+            "email": "emmanueltolu.adebayo@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PetraAfrica\\Petra\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PetraAfrica\\Petra\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PetraAfrica\\Petra\\PetraServiceProvider"
+            ],
+            "aliases": {
+                "Petra": "PetraAfrica\\Petra\\PetraFacade"
+            }
+        }
+    }
+}
