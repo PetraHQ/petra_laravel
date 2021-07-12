@@ -17,10 +17,13 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^5.0 || ^6.0 || ^7.0 || ^8.0",
+        "guzzlehttp/guzzle": "~6|~7"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
+        "scrutinizer/ocular": "~1.1",
+        "php-coveralls/php-coveralls": "^2.0",
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
