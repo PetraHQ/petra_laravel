@@ -1,4 +1,4 @@
-# Very short description of the package
+# Petra Africa SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/petra africa/petra.svg?style=flat-square)](https://packagist.org/packages/petra africa/petra)
 [![Total Downloads](https://img.shields.io/packagist/dt/petra africa/petra.svg?style=flat-square)](https://packagist.org/packages/petra africa/petra)
@@ -11,13 +11,13 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require petra africa/petra
+composer require petra_africa/petra
 ```
 
 ## Usage
 
 ```php
-// Usage description here
+$petra = new \PetraAfrica\Petra\Petra("secret-key");
 ```
 
 ### Testing
