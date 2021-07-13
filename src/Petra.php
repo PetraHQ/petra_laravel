@@ -35,7 +35,7 @@ class Petra
      */
     public function initializeTransaction(string $email, $amount, $type){
         try {
-            $request = $this->client->post("/transaction/initialize",[
+            $request = $this->client->post("/transaction",[
                 "body"=>json_encode([
                     'email'=>$email,
                     'amount'=>$amount,
